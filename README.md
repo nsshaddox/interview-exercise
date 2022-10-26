@@ -2,8 +2,8 @@
 
 ## Todo: 
 - [x] Create a public GitHub repository
-- [ ] Share repository
-- [ ] Install Node.js and use Express.js to create a simple web app
+- [x] Share repository
+- [x] Install Node.js and use Express.js to create a simple web app
 - [ ] Write a Dockerfile that builds and runs the app
 - [ ] Make sure Dockerfile is hosted in the repository
 - [ ] Create GitHub Actions Workflow that:
