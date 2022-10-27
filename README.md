@@ -15,11 +15,17 @@
    - [ ] Add GitHub Workflow to automatically deploy the app when changes are made to the main branch
    - [ ] Add a field to the JSON output of the app and verify the change is deployed
 
+***
+
+### Dockerfile Instructions:
 
 **How to build and run the Dockerfile**
 While in the directory of the Dockerfile:
-* docker build . -t myimage
-* docker run -p 3000:3000 --name mycontainer myimage
 
-To stop the container (*in another terminal*):
-* docker container stop mycontainer
+`docker build . -t myimage`
+
+`docker run -p 3000:3000 --name mycontainer myimage`
+
+**To stop the container (*in another terminal*)**:
+
+`docker container stop mycontainer`
