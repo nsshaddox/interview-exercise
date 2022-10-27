@@ -5,7 +5,7 @@ const port = 3000
 app.get('/', (req, res) => {
   
   res.json({
-    "name": "Nicholas Shaddox",
+    "message": "My name is Nicholas Shaddox",
     "timestamp": Date.now()
   })
 })
