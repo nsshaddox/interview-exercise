@@ -7,7 +7,7 @@
 - [x] Write a Dockerfile that builds and runs the app (description below)
 - [x] Make sure Dockerfile is hosted in the repository
 - [ ] Create GitHub Actions Workflow that:
-   - [ ] Builds the app's Docker image
+   - [x] Builds the app's Docker image
    - [ ] Verifies the app functionality using apprentice-action (refer to pdf)
    - [ ] Pushes image to Docker Hub
 - [ ] Deploy the app to a cloud platform using the image from Docker Hub
