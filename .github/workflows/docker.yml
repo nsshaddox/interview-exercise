@@ -1,0 +1,11 @@
+name: Docker Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: node:19.0-slim
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build a docker container 
+      run: sudo docker build . -t node
+    - name: Run the container
+      run: docker run -p 3000:3000 --name runningnode node
