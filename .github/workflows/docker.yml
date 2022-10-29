@@ -21,7 +21,7 @@ jobs:
       run: docker push ${{ secrets.DOCKER_USER }}/apprenticeship
       
     - name: Run the container
-      run: docker run -d -p 80:80 --name app nodeimage
+      run: docker run -d -p 80:80 --name app ${{ secrets.DOCKER_USER }}/apprenticeship
 
     - name: Run tests
       uses: liatrio/github-actions/apprentice-action@master
