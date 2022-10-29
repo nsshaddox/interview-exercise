@@ -6,10 +6,10 @@
 - [x] Install Node.js and use Express.js to create a simple web app
 - [x] Write a Dockerfile that builds and runs the app (description below)
 - [x] Make sure Dockerfile is hosted in the repository
-- [ ] Create GitHub Actions Workflow that:
+- [x] Create GitHub Actions Workflow that:
    - [x] Builds the app's Docker image
-   - [ ] Verifies the app functionality using apprentice-action (refer to pdf)
-   - [ ] Pushes image to Docker Hub
+   - [x] Verifies the app functionality using apprentice-action (refer to pdf)
+   - [x] Pushes image to Docker Hub
 - [ ] Deploy the app to a cloud platform using the image from Docker Hub
 - [ ] Extra Credit
    - [ ] Add GitHub Workflow to automatically deploy the app when changes are made to the main branch
