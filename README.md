@@ -26,8 +26,8 @@ While in the directory of the Dockerfile:
 
 `docker build . -t myimage`
 
-`docker run -p 3000:3000 --name mycontainer myimage`
+`docker run -d -p 80:80 --name mycontainer myimage`
 
-**To stop the container (*in another terminal*)**:
+**To stop the container**:
 
 `docker container stop mycontainer`
