@@ -11,7 +11,7 @@ jobs:
       run: docker build . -t nodeimage
       
     - name: Run the container
-      run: docker run -d -p 3000:3000 --name app nodeimage
+      run: docker run -d -p 80:80 --name app nodeimage
 
     - name: Run tests
       uses: liatrio/github-actions/apprentice-action@master
