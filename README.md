@@ -1,5 +1,7 @@
 # Liatrio Apprenticeship Interview Exercise!
 
+[![Docker Workflow](https://github.com/nsshaddox/interview-exercise/actions/workflows/docker.yml/badge.svg)](https://github.com/nsshaddox/interview-exercise/actions/workflows/docker.yml)
+
 ### Todo: 
 - [x] Create a public GitHub repository
 - [x] Share repository
