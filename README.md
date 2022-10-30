@@ -12,7 +12,7 @@
    - [x] Builds the app's Docker image
    - [x] Verifies the app functionality using apprentice-action (refer to pdf)
    - [x] Pushes image to Docker Hub
-- [ ] Deploy the app to a cloud platform using the image from Docker Hub
+- [x] Deploy the app to a cloud platform using the image from Docker Hub
 - [ ] Extra Credit
    - [ ] Add GitHub Workflow to automatically deploy the app when changes are made to the main branch
    - [ ] Add a field to the JSON output of the app and verify the change is deployed
@@ -31,3 +31,8 @@ While in the directory of the Dockerfile:
 **To stop the container**:
 
 `docker container stop mycontainer`
+
+### App Deployment
+This application was deployed on Google Cloud Platform using the Compute Engine
+
+[website](35.209.218.67 "35.209.218.67")
