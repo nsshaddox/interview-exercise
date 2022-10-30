@@ -35,4 +35,4 @@ While in the directory of the Dockerfile:
 ### App Deployment
 This application was deployed on Google Cloud Platform using the Compute Engine
 
-[website](35.209.218.67 "35.209.218.67")
+[website](http://35.209.218.67 "35.209.218.67")
