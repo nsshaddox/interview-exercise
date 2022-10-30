@@ -6,6 +6,8 @@ WORKDIR /node
 COPY ./myapp/package*.json ./
 COPY ./myapp/app.js .
 
+RUN npm install
+
 EXPOSE 80
 
 CMD ["node", "app.js"]
