@@ -46,7 +46,7 @@ jobs:
       run: gcloud auth configure-docker --quiet
 
     - name: Build a docker image for gcr 
-      run: docker tag ${{ secrets.DOCKER_USER }}/apprenticeship:tag gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}:tag
+      run: docker tag ${{ secrets.DOCKER_USER }}/apprenticeship gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}
 
     - name: Push image
       run: docker push $IMAGE_NAME
