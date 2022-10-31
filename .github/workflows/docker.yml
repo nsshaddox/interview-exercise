@@ -7,18 +7,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}
     steps:
     - uses: actions/checkout@v3
 
+    # Build and Run with Docker
     - name: Build a docker image 
       run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/apprenticeship
       
     - name: Run the container
       run: docker run -d -p 80:80 --name app ${{ secrets.DOCKER_USER }}/apprenticeship
 
+    # Liatrio's  tests
     - name: Run tests
       uses: liatrio/github-actions/apprentice-action@master
     
+    # Docker Hub
     - name: Docker Login
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
@@ -29,5 +34,24 @@ jobs:
     - name: Docker Push
       run: docker push ${{ secrets.DOCKER_USER }}/apprenticeship
 
+    # Google Cloud
+    - name: Login to Google Cloud
+      uses: google-github-actions/setup-gcloud@v0
+      with:
+        project_id: ${{ secrets.GCP_PROJECT }}
+        service_account_email: ${{ secrets.GCP_EMAIL }}
+        service_account_key: ${{ secrets.GCP_CREDS }}
+
+    - name: Configure Docker
+      run: gcloud auth configure-docker --quiet
+
+    - name: Build a docker image for gcr 
+      run: docker tag ${{ secrets.DOCKER_USER }}/apprenticeship:tag gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APPLICATION }}:tag
+
+    - name: Push image
+      run: docker push $IMAGE_NAME
+
+    - name: Deploy Docker image
+      run: gcloud run deploy ${{ secrets.GCP_PROJECT }} --image $IMAGE_NAME --region us-central1 --platform managed
 
     
