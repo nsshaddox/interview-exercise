@@ -14,7 +14,6 @@ jobs:
 
     # Update app.js with latest version
     - name: Upate app.js with latest version in JSON output
-      uses: battila7/get-version-action@v2
       run: sed -i '10i"unique_id":"${{ github.run_id }}",' myapp/app.js
 
     # Build and Run with Docker
