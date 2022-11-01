@@ -36,3 +36,9 @@ While in the directory of the Dockerfile:
 This application was deployed on Google Cloud Platform using the Compute Engine
 
 [website](http://35.209.218.67 "35.209.218.67")
+
+
+### Extra Credit
+
+**[Link](https://liatrio-apprenticeship-brpy3wxz7a-uc.a.run.app/) to Google Run instance**
+

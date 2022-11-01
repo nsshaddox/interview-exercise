@@ -3,7 +3,8 @@ const app = express()
 const port = 80
 
 app.get('/', (req, res) => {
-  res.json({
+
+  res.status(200).json({
     "message": "My name is Nicholas Shaddox",
     "timestamp": Date.now()
   })
