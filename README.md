@@ -14,7 +14,7 @@
    - [x] Pushes image to Docker Hub
 - [x] Deploy the app to a cloud platform using the image from Docker Hub
 - [ ] Extra Credit
-   - [ ] Add GitHub Workflow to automatically deploy the app when changes are made to the main branch
+   - [x] Add GitHub Workflow to automatically deploy the app when changes are made to the main branch
    - [ ] Add a field to the JSON output of the app and verify the change is deployed
 
 ***
