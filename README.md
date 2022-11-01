@@ -15,7 +15,7 @@
 - [x] Deploy the app to a cloud platform using the image from Docker Hub
 - [ ] Extra Credit
    - [x] Add GitHub Workflow to automatically deploy the app when changes are made to the main branch
-   - [ ] Add a field to the JSON output of the app and verify the change is deployed
+   - [x] Add a field to the JSON output of the app and verify the change is deployed
 
 ***
 
@@ -40,5 +40,7 @@ This application was deployed on Google Cloud Platform using the Compute Engine
 
 ### Extra Credit
 
-**[Link](https://liatrio-apprenticeship-brpy3wxz7a-uc.a.run.app/) to Google Run instance**
+[Link](https://liatrio-apprenticeship-brpy3wxz7a-uc.a.run.app/) to Google Run instance
+
+Each successful build, test, and deploy will result in a new "unique_id".
 
